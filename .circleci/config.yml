@@ -20,6 +20,7 @@ workflows:
             - elixir/precompile_for_macos_arm
             - elixir/precompile_for_linux
           version: << pipeline.git.tag >>
+          context: publishing
           filters:
             branches:
               ignore: /.*/
